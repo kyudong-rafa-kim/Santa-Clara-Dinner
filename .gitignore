@@ -7,3 +7,4 @@ config.js
 # 에디터
 .vscode/
 *.swp
+.vercel
