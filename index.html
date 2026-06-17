@@ -47,6 +47,8 @@
   .rows{font-size:13.5px;color:var(--sub);display:flex;flex-direction:column;gap:5px}
   .rows b{color:var(--txt);font-weight:600}
   .cap{color:#1a8a4a;font-weight:700}
+  .why{color:#065c28;font-size:12.5px;line-height:1.5}
+  .why b{font-weight:700}
   .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
   .links a{font-size:12.5px;text-decoration:none;padding:7px 11px;border-radius:8px;font-weight:700}
   .map{background:#e6f4ea;color:#1a7a3c}
@@ -65,14 +67,12 @@
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-<script src="config.js"></script>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>산타클라라 대학(SCU) 근처 단체 회식 식당</h1>
-    <div class="meta">약 40명 · 음주 가능 · 식당 / 디너파티 / 펍 3가지 유형 · 총 18곳 (13기 추천 2곳 포함) &nbsp;|&nbsp; 기준점: Santa Clara University (500 El Camino Real, Santa Clara, CA)</div>
+    <div class="meta">약 40명 · 음주 가능 · 식당 / 디너파티 / 펍 3가지 유형 · 총 20곳 (13기 추천 2곳 포함) &nbsp;|&nbsp; 기준점: Santa Clara University (500 El Camino Real, Santa Clara, CA)</div>
   </header>
 
   <div class="toolbar">
@@ -109,7 +109,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Pizza+My+Heart+700+Bellomy+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍕</span>
-          <img data-photo-ref="AaVGc3nHtDsQUF31ZiFCQdxJzQn89tdxamojoMD7RQHxpF0ft_m9dq1pj2EK3FTINPP-Ie63pLGrwYAyuIlrRv3qfmWlAoN6-liA_CYraLuuFkQNeFAQQms-X6jlunrv1yS6KxFYF_nCMjxuqHyswg0AFgUTBK3j9H7dJpWBOq0j5PFc_d5oPWGrDob9yp1U-5C3oqIWhEYBVLXp37AzMrnxdjGm_uyBMEYjwgZW8mSeFHyfUoNqiRc9UlV1A3hgdIiyzrc6d26DaiOEu5WZ0UwRiahUJmEwjsuNbJ2XMSayJ2_g8OupMuXRvBES1wApAZpLY8kzsmnPMxDx_JDW9nkenHpHCvNyyyKfEP8FjgiLxgrFEtAgrY-TzTlrMJv4QCE_QYD71QvX0NtbTZQ9CuuqvPzaayZ9jTjj93bmiJfsrz6-RQ" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nHtDsQUF31ZiFCQdxJzQn89tdxamojoMD7RQHxpF0ft_m9dq1pj2EK3FTINPP-Ie63pLGrwYAyuIlrRv3qfmWlAoN6-liA_CYraLuuFkQNeFAQQms-X6jlunrv1yS6KxFYF_nCMjxuqHyswg0AFgUTBK3j9H7dJpWBOq0j5PFc_d5oPWGrDob9yp1U-5C3oqIWhEYBVLXp37AzMrnxdjGm_uyBMEYjwgZW8mSeFHyfUoNqiRc9UlV1A3hgdIiyzrc6d26DaiOEu5WZ0UwRiahUJmEwjsuNbJ2XMSayJ2_g8OupMuXRvBES1wApAZpLY8kzsmnPMxDx_JDW9nkenHpHCvNyyyKfEP8FjgiLxgrFEtAgrY-TzTlrMJv4QCE_QYD71QvX0NtbTZQ9CuuqvPzaayZ9jTjj93bmiJfsrz6-RQ&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--rec)">13기 추천 · 도보 약 5분</span>
@@ -131,7 +131,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Home+Eat+%ED%95%9C%EA%B0%80%EC%97%B4+638+El+Camino+Real+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🥢</span>
-          <img data-photo-ref="AaVGc3kTZ9acINXsbK609-vTTVKcP87-xBKnZ69d8W_dQsyjuSORtFkxvjPy6xY6sMPFcj5pVp-M9VgRsU77wlKrc9bOCKvcT4fkLy_of12sROQK9xtJloYOIiqlN-qiUGZ349DAX8x_ilD-9TVLw58GFEdISXucyVTF4V_f5oeOqzQU2QESylwhc1AZ-jEXWlyjXiFv5lrUYInTGwrPzmu0_Oo3hPqwlizN_4f_5nF86Cq8KQynUsc0MeNM6Ia9Of6lgI2z3msl1cE_g6vBbyFVJZ_zJr9Gs4oZuCh7_HW9YyQ3dONhTCbgvrsfsOopmsQ1F0TKGxuCT74tfu-kGl51HYKWCwOM3HnBUDNMSt-vKLDYH1z-og4LKS7g0fxF-o0LFLQkPSRETkoV7x_b36T6hXTrhQ9n7stEYP44OFV3JzvwTZI" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kTZ9acINXsbK609-vTTVKcP87-xBKnZ69d8W_dQsyjuSORtFkxvjPy6xY6sMPFcj5pVp-M9VgRsU77wlKrc9bOCKvcT4fkLy_of12sROQK9xtJloYOIiqlN-qiUGZ349DAX8x_ilD-9TVLw58GFEdISXucyVTF4V_f5oeOqzQU2QESylwhc1AZ-jEXWlyjXiFv5lrUYInTGwrPzmu0_Oo3hPqwlizN_4f_5nF86Cq8KQynUsc0MeNM6Ia9Of6lgI2z3msl1cE_g6vBbyFVJZ_zJr9Gs4oZuCh7_HW9YyQ3dONhTCbgvrsfsOopmsQ1F0TKGxuCT74tfu-kGl51HYKWCwOM3HnBUDNMSt-vKLDYH1z-og4LKS7g0fxF-o0LFLQkPSRETkoV7x_b36T6hXTrhQ9n7stEYP44OFV3JzvwTZI&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--rec)">13기 추천 · 도보 약 8분</span>
@@ -163,7 +163,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=The+Hut+Restaurant+Bar+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍺</span>
-          <img data-photo-ref="AaVGc3n6cAcDFsb581rPeFY-IMWTQL4AlshWIM5uPrFqIGet3ONPT6bT3Iht4KhTYHY1UC5-f1WMTvWPQZ-GaBSeMbEPjPJBrU3KGCJ2P_028DxJktrk85AH-UE9oigQnd2tWIvEiYKhVof7x3ZIV6ylEMBVAyD6K7fBMIXzckkBk8LsFeRFDPdmkrZwthSJaDK_urOpxfn1_fYNM9nxFuw4CWkwF40hBzXevgHIrSVWkcu0exIgIH7JrXRvc7N-dT4i3wItWyRpWLZsKiRL-PyyZmKsFrnigPcE1QpyZ06CdOzBxeC-tqtxmo7mFDz1XdAqLklsCO81KFxGTr2hINbJjH6edsOi77g0iYRy9lapd6Th6XpYCF41q-5hMIyXwmXSKCHi0GSDrTuBR9liCItPJrNPMsF2KR1YhBdf2v-M42Y6tqqE" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3n6cAcDFsb581rPeFY-IMWTQL4AlshWIM5uPrFqIGet3ONPT6bT3Iht4KhTYHY1UC5-f1WMTvWPQZ-GaBSeMbEPjPJBrU3KGCJ2P_028DxJktrk85AH-UE9oigQnd2tWIvEiYKhVof7x3ZIV6ylEMBVAyD6K7fBMIXzckkBk8LsFeRFDPdmkrZwthSJaDK_urOpxfn1_fYNM9nxFuw4CWkwF40hBzXevgHIrSVWkcu0exIgIH7JrXRvc7N-dT4i3wItWyRpWLZsKiRL-PyyZmKsFrnigPcE1QpyZ06CdOzBxeC-tqtxmo7mFDz1XdAqLklsCO81KFxGTr2hINbJjH6edsOi77g0iYRy9lapd6Th6XpYCF41q-5hMIyXwmXSKCHi0GSDrTuBR9liCItPJrNPMsF2KR1YhBdf2v-M42Y6tqqE&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--near)">학교 펍 · 도보 약 3분</span>
@@ -173,6 +173,7 @@
           <span><b>위치</b> 3200 The Alameda, Santa Clara (캠퍼스 정문 앞)</span>
           <span><b>분위기</b> SCU의 상징적 학교 펍, 풀바 + 생맥주 12종, 패티오</span>
           <span class="cap">단체 친화적(셰어 메뉴) · 40명은 패티오/대관 문의</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 야외 패티오 단독 대관 시 40명 착석 가능 · SCU 지역 단체 모임 경험 풍부 · 셰어 메뉴+풀바로 회식 진행 효율적</span>
           <span><b>예약</b> 전화 (408) 899-4294 · 일요일 휴무</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=The%20Hut%203200%20The%20Alameda%20Santa%20Clara&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -185,7 +186,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Mio+Vicino+Santa+Clara+restaurant" target="_blank" rel="noopener">
           <span class="emoji">🍝</span>
-          <img data-photo-ref="AaVGc3ny64IDcxui4QAlPW58WZv94bZVx2j40Pj4YEL01MuVBqU8RfY7AdeXcHmBBUybzB3e1B0rV9ZqE5t3PKM3GsSW_SwzEI-O_XnVaq6CaX1l7lTSGMrv-GBIxiKzecog8TSqFRIROURGBhVIwBfOIDTyegyOekuAm-qN52ERKeNLaZFIRg3wXLnBXHulKImYsPXmAxwBTTS3tr-kYriDq2HVvXrlBHe2-L88q3QoRdJGehUm9HHJjcPLByaup9U-U7bRAYlixqSbEs2hKipNCgSLVoBNDr3gIygTpqe74ThvKCfGo0ViALvknU3-4Z0_8cZy1vQKc4J5-YHpaUjDtKe2JMvSj-WeiZgM6YzADOsaREvO5Cj0FDEpsgaPP7fd8yDIWruUIPb1f33KjlWs9rqC5rBr2DeejHZiec24wouR6A" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3ny64IDcxui4QAlPW58WZv94bZVx2j40Pj4YEL01MuVBqU8RfY7AdeXcHmBBUybzB3e1B0rV9ZqE5t3PKM3GsSW_SwzEI-O_XnVaq6CaX1l7lTSGMrv-GBIxiKzecog8TSqFRIROURGBhVIwBfOIDTyegyOekuAm-qN52ERKeNLaZFIRg3wXLnBXHulKImYsPXmAxwBTTS3tr-kYriDq2HVvXrlBHe2-L88q3QoRdJGehUm9HHJjcPLByaup9U-U7bRAYlixqSbEs2hKipNCgSLVoBNDr3gIygTpqe74ThvKCfGo0ViALvknU3-4Z0_8cZy1vQKc4J5-YHpaUjDtKe2JMvSj-WeiZgM6YzADOsaREvO5Cj0FDEpsgaPP7fd8yDIWruUIPb1f33KjlWs9rqC5rBr2DeejHZiec24wouR6A&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--near)">이탈리안 · 도보 약 8분</span>
@@ -195,6 +196,7 @@
           <span><b>위치</b> 1290 Benton St (Franklin Mall), Santa Clara</span>
           <span><b>분위기</b> 1992년 오픈 동네 이탈리안, 프리미엄 와인</span>
           <span class="cap">프라이빗 파티룸 운영 (뱅킷 메뉴 · 룸 보증금 $150)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 프라이빗 파티룸(~35명) + 메인홀 조합으로 40명 운영 가능 · 별도 뱅킷 메뉴로 단체 주문 간소화</span>
           <span><b>예약</b> Private Parties 페이지 / 전화 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Mio%20Vicino%201290%20Benton%20St%20Santa%20Clara&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -208,7 +210,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Mission+City+Grill+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍔</span>
-          <img data-photo-ref="AaVGc3lggn_e7SG1ncCar3wEXWysPJfis6AnAELsCj9t390EaqNaERgXb2KrcRf13bBVpV-fVqLqsDF1GG86iaZ04TeRzE0A6UzDyZ_4xjIDedy3tpaPZaaEVDV3Uh9biYJyHC_8tevnew-WSzScrX1Df38GdoJgvYEDeYGgCj7JGSwLgEjTBJ-Dq15cSjbcXffT_U8xfl5RjEqmo0_-7X7xaqyyVxYOt51EAm9t8b5k6G1WMvG1wP-SVeOl_TB0HEXPaJzDKY0lpun-0Dh_OGVDECilIkSu3B242qnReRI5Aa6wxDbWfA2g1NvCl39rAj27_zlWAtPInUip2nioEJ_rW-O-OXYQETmEt_43tIqIgn3mNmMI4vcni-jUTz0GJgHmh_PHPWKji56hDfX6Zq10fn96Gn2GxzvI6CB_vV0uyQP5ejwQ" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3lggn_e7SG1ncCar3wEXWysPJfis6AnAELsCj9t390EaqNaERgXb2KrcRf13bBVpV-fVqLqsDF1GG86iaZ04TeRzE0A6UzDyZ_4xjIDedy3tpaPZaaEVDV3Uh9biYJyHC_8tevnew-WSzScrX1Df38GdoJgvYEDeYGgCj7JGSwLgEjTBJ-Dq15cSjbcXffT_U8xfl5RjEqmo0_-7X7xaqyyVxYOt51EAm9t8b5k6G1WMvG1wP-SVeOl_TB0HEXPaJzDKY0lpun-0Dh_OGVDECilIkSu3B242qnReRI5Aa6wxDbWfA2g1NvCl39rAj27_zlWAtPInUip2nioEJ_rW-O-OXYQETmEt_43tIqIgn3mNmMI4vcni-jUTz0GJgHmh_PHPWKji56hDfX6Zq10fn96Gn2GxzvI6CB_vV0uyQP5ejwQ&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--near)">뉴아메리칸 · 차로 3분</span>
@@ -218,6 +220,7 @@
           <span><b>위치</b> 2000 El Camino Real, Santa Clara</span>
           <span><b>분위기</b> 뉴아메리칸, 활기찬 바 분위기, 풀바</span>
           <span class="cap">단체 예약 가능 · 영업 ~20:00로 이른 마감 주의</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 오픈 다이닝홀이 단체 배치에 유연 · OpenTable 그룹 예약 지원 · 이른 저녁 회식에 적합 (20:00 마감 필수 유의)</span>
           <span><b>예약</b> OpenTable + 전화 (408) 244-6267</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Mission%20City%20Grill%202000%20El%20Camino%20Real%20Santa%20Clara&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -230,7 +233,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Pizz%27a+Chicago+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍕</span>
-          <img data-photo-ref="AaVGc3nnz6AiWDhh4gUgx2n6EloQIU3eCZECTXNy08o0SeIXtL86-UQ4lqCFU_0PkYhYglGW-elcGImTYdy06gt7sjct_DgJuOhYCCpKKku7jfTNpKJtBOZu7uu0Oo2y3b32OLX-xBFBBYWZ0KyHx8KFesuqsHmXH-CcCh3jVYm5AN9bdfSA6AWGGOFUkKffbnhw0N8zupUe4PfRBsgLlDsaEYCuISih6K-2un16QZac9dT4PhFJLswAGr-tiuzVXBQj7nhJ2NMv0rLlNXF2dHfWw6MHQlzJs9yc_Bk0O2MK0xtiQauNTof0KqV9DkdCGwtKxvc2IpsDJ8Rf12lMZthJY4Dbcltt6gZtnAbbzvWjibFFO7BF0NlfUBiYjeVyynU0zDUAcx4AUV7L4J7LczC-Qkv7euc6iZAWGYW2iSu11vvPar8qgtGbYG03i_Bi" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nnz6AiWDhh4gUgx2n6EloQIU3eCZECTXNy08o0SeIXtL86-UQ4lqCFU_0PkYhYglGW-elcGImTYdy06gt7sjct_DgJuOhYCCpKKku7jfTNpKJtBOZu7uu0Oo2y3b32OLX-xBFBBYWZ0KyHx8KFesuqsHmXH-CcCh3jVYm5AN9bdfSA6AWGGOFUkKffbnhw0N8zupUe4PfRBsgLlDsaEYCuISih6K-2un16QZac9dT4PhFJLswAGr-tiuzVXBQj7nhJ2NMv0rLlNXF2dHfWw6MHQlzJs9yc_Bk0O2MK0xtiQauNTof0KqV9DkdCGwtKxvc2IpsDJ8Rf12lMZthJY4Dbcltt6gZtnAbbzvWjibFFO7BF0NlfUBiYjeVyynU0zDUAcx4AUV7L4J7LczC-Qkv7euc6iZAWGYW2iSu11vvPar8qgtGbYG03i_Bi&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--near)">딥디시 피자 · 차로 7분</span>
@@ -240,6 +243,7 @@
           <span><b>위치</b> 1576 Halford Ave, Santa Clara</span>
           <span><b>분위기</b> 시카고식 딥디시 피자, 맥주·와인</span>
           <span class="cap">뒤편 대형 단체룸 보유 (단체에 강함)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 전용 단체룸 사전 확보 가능 · 피자 셰어 방식으로 다양한 취향 통일 용이 · 1,100+ 리뷰의 대형 단체 응대 노하우</span>
           <span><b>예약</b> 전화 / 웹사이트 단체 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Pizz%27a%20Chicago%201576%20Halford%20Ave%20Santa%20Clara&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -253,7 +257,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Taplands+Santa+Clara+craft+beer" target="_blank" rel="noopener">
           <span class="emoji">🍻</span>
-          <img data-photo-ref="AaVGc3kZKxqTPYCjSSKgWRfCRoMhmwWW0z3WT57TXeDrmZSdiFQga_MaJdgnJ0Zm72DG3wXWXQWyiaWAzQdukiKZhB_0kWkzks2lC_CSz0ePV6ykGVWtZQogxBK8INi8zVlK5LrFm2u4TojzUlv9tln3kCo4PITbeywdEYyWQoMG7i7FYVABKLAONL1KFmwHv7hcoBDUEuJyCOhjjb8lQ5zG3RJUgBDd0gGyDPXPmBYm-Qwp-bM_HSKbH6zjyj-pTywuKPDRKyeLbDEBn2iAWIR1EPHDF06QrLS6vWLTiAhY9qcFKSWasyzOYCxMvAq2Y6mCu5vkgHff_6-uezTfzqyKe6ik9IVQeINwTF63ebyc3bjq2Inhn-3IxVMQrW-zUEJXIkB0fYcKu3FmJTVKwc9PaAKc8MrBnmxTLg5ipms7VF1tmBs" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kZKxqTPYCjSSKgWRfCRoMhmwWW0z3WT57TXeDrmZSdiFQga_MaJdgnJ0Zm72DG3wXWXQWyiaWAzQdukiKZhB_0kWkzks2lC_CSz0ePV6ykGVWtZQogxBK8INi8zVlK5LrFm2u4TojzUlv9tln3kCo4PITbeywdEYyWQoMG7i7FYVABKLAONL1KFmwHv7hcoBDUEuJyCOhjjb8lQ5zG3RJUgBDd0gGyDPXPmBYm-Qwp-bM_HSKbH6zjyj-pTywuKPDRKyeLbDEBn2iAWIR1EPHDF06QrLS6vWLTiAhY9qcFKSWasyzOYCxMvAq2Y6mCu5vkgHff_6-uezTfzqyKe6ik9IVQeINwTF63ebyc3bjq2Inhn-3IxVMQrW-zUEJXIkB0fYcKu3FmJTVKwc9PaAKc8MrBnmxTLg5ipms7VF1tmBs&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--near)">크래프트 맥주바 · 도보 약 15분</span>
@@ -263,6 +267,7 @@
           <span><b>위치</b> 1171 Homestead Rd, Santa Clara (Old Quad 지구)</span>
           <span><b>분위기</b> 베이에어리어 크래프트 생맥주 24종 · 수제 샌드위치 · 편한 분위기</span>
           <span class="cap">단체 친화적 · 전체 대관 문의 가능</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 탭룸 전체 대관 시 40명 독점 공간 확보 · 자유석 스탠딩 파티 형식에 최적 · 케이터링 연계로 식사 해결 가능</span>
           <span><b>영업</b> Mon–Thu 3pm–10pm · Fri 12pm–12am · Sat 12pm–11pm · Sun 12pm–10pm</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Taplands%201171%20Homestead%20Rd%20Santa%20Clara&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -275,7 +280,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=thirsty.bar+1031+Monroe+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍺</span>
-          <img data-photo-ref="AaVGc3krK27moyr6_oKAxJR-BA6CMkTOPVcX7iGlamm7EsBPSeAjcLcycOGkEdQpW1j7jbbxaJJfTdv30fVAUdtoa3BL0tmi6B1G73yqCUCII1BnKzg-lbbW8I7-t_PKAKeD17tcekYUPg-dSZXhyn0K_PDIL_g0A29u2ekwWTTW0MNtQ99eMWGc4elIqxr9687Fh7rOEmRsOgFhbUJ9XxtOvffuucc9JUe1sOuJTh3yyC0En9Br6qFynJ-4gs-C-YxPu1LR_D-Pcy4tj7RxvemL5mDgfGkT0JCJvp2N8IA30VQV5xPlDWHonzI087ioejoVay-l4HlDrmgrSQIAJ8bJfVotuKyutv6lxx4vOsQPJBvoxGHlkczNU0Xr2UczxgWZtk0oSGmapa0eOfb_ImEZZeN-OK2XaRmk5eK9gAwX06m8rQ" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3krK27moyr6_oKAxJR-BA6CMkTOPVcX7iGlamm7EsBPSeAjcLcycOGkEdQpW1j7jbbxaJJfTdv30fVAUdtoa3BL0tmi6B1G73yqCUCII1BnKzg-lbbW8I7-t_PKAKeD17tcekYUPg-dSZXhyn0K_PDIL_g0A29u2ekwWTTW0MNtQ99eMWGc4elIqxr9687Fh7rOEmRsOgFhbUJ9XxtOvffuucc9JUe1sOuJTh3yyC0En9Br6qFynJ-4gs-C-YxPu1LR_D-Pcy4tj7RxvemL5mDgfGkT0JCJvp2N8IA30VQV5xPlDWHonzI087ioejoVay-l4HlDrmgrSQIAJ8bJfVotuKyutv6lxx4vOsQPJBvoxGHlkczNU0Xr2UczxgWZtk0oSGmapa0eOfb_ImEZZeN-OK2XaRmk5eK9gAwX06m8rQ&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--near)">동네 바 · 도보 약 10분</span>
@@ -285,6 +290,7 @@
           <span><b>위치</b> 1031 Monroe St, Santa Clara (Franklin Square 몰 내)</span>
           <span><b>분위기</b> 생맥주 20종 · 당구대 · 이웃 친화적 라운지 바</span>
           <span class="cap">단체 바 나이트 적합 · 전화 사전 협의 권장</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 매일 새벽 2시까지 영업으로 2차 단체 유입에 최적 · 생맥주 20종+당구로 자유로운 바 파티 구성 · 사전 협의로 구역 지정 가능</span>
           <span><b>영업</b> 매일 12pm–2am · ☎ (408) 985-7201</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=thirsty.bar%201031%20Monroe%20St%20Santa%20Clara&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -307,7 +313,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Birk%27s+Restaurant+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🥩</span>
-          <img data-photo-ref="AaVGc3llmcMQChIMJ56qypprxr7yed2qU5Fxt8Y06CIA0CH_KChvOJyPuyGUksn_-vCu3i0qo4iRTTNMXaST_2aSlnq6Ffpe0e4gUdoFMm07H05jM0KgFWMlovx_Amji16sYmkQna-0LuVoUxCTgJzHf7gu-ul1wi4MlBzYmnuNGzZrFUTv_u1-yXPcICSEElYCFKWTVgRVLC9Z-RYJ7SX-WD02E8VrygqWvI6Bt7P1UrQkzPoWxYA-jnDK_D4WBysjuKVi2wEUmMSzciFj1l_s_snH4rMEhjeWH-AZM8WepWBBFOdKx-QAiy7bTmqDnrw6KszPfm0P3eEbpOtGG1ep6ZF5qJO7tAyyJybmYTDOIUbBIJpqopNThIT4dQxU43WM1XqmGMEPyjwazAQ-2-_2UuKmOM7OpTNkFYo3rnKo0WGwbpxTr" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3llmcMQChIMJ56qypprxr7yed2qU5Fxt8Y06CIA0CH_KChvOJyPuyGUksn_-vCu3i0qo4iRTTNMXaST_2aSlnq6Ffpe0e4gUdoFMm07H05jM0KgFWMlovx_Amji16sYmkQna-0LuVoUxCTgJzHf7gu-ul1wi4MlBzYmnuNGzZrFUTv_u1-yXPcICSEElYCFKWTVgRVLC9Z-RYJ7SX-WD02E8VrygqWvI6Bt7P1UrQkzPoWxYA-jnDK_D4WBysjuKVi2wEUmMSzciFj1l_s_snH4rMEhjeWH-AZM8WepWBBFOdKx-QAiy7bTmqDnrw6KszPfm0P3eEbpOtGG1ep6ZF5qJO7tAyyJybmYTDOIUbBIJpqopNThIT4dQxU43WM1XqmGMEPyjwazAQ-2-_2UuKmOM7OpTNkFYo3rnKo0WGwbpxTr&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--rest)">스테이크·씨푸드</span>
@@ -317,6 +323,7 @@
           <span><b>위치</b> 3955 Freedom Circle, Santa Clara</span>
           <span><b>분위기</b> 클래식 아메리칸 스테이크하우스, 풀바</span>
           <span class="cap">단체석 최대 50명 (세미프라이빗) · 프라이빗룸 20·35명</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 기업 이벤트 전문 스테이크하우스로 단체 서비스 노하우 탁월 · 세미프라이빗 50명 확보 or 프라이빗룸 분할 운영 · Private Dining 전담팀 운영</span>
           <span><b>예약</b> OpenTable + 전화 (408) 980-6400</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Birk%27s%20Restaurant%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -330,7 +337,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Pedro%27s+Restaurant+Cantina+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🌮</span>
-          <img data-photo-ref="AaVGc3kruETUERuT8AxDMId5nWUw27Brb3d9KrnVmFt3Vyi3qxgFnlmHfXYQrasVBlVHrkkF1DBZ09oFNxsLNneFk7IfXczVAby2N941XmM7OyOaO7dhaqIHE1dS2_IFgJ2uxnl79Aa3tmL7N4Xycr2pI--najb3hTe7qxTKf-ijmaoY6K7qPeSx2qN4Fbwr63Tg2wIbcttIruR6Aluff9xBZmIn1mDRcnwrU4nmGkZ7_3tNu_QSgfFZAdFYBPLQEFNcfuklhVE_283sEmEpgUwPsgBsrAWv9ek2-ekQAKInt1qdT7cHmYG0yrEBlHn0JSlwfhIdFQP-GlGXHOTiqChdGzSyuZnk5RUUAv1rEuFHod5FOJp76AVGR9n1hNBWPXU0PQzZBZsJcKImoZEDdqLz4X9eGW-RPMdFxS6dCe2ehkg5_vZa" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kruETUERuT8AxDMId5nWUw27Brb3d9KrnVmFt3Vyi3qxgFnlmHfXYQrasVBlVHrkkF1DBZ09oFNxsLNneFk7IfXczVAby2N941XmM7OyOaO7dhaqIHE1dS2_IFgJ2uxnl79Aa3tmL7N4Xycr2pI--najb3hTe7qxTKf-ijmaoY6K7qPeSx2qN4Fbwr63Tg2wIbcttIruR6Aluff9xBZmIn1mDRcnwrU4nmGkZ7_3tNu_QSgfFZAdFYBPLQEFNcfuklhVE_283sEmEpgUwPsgBsrAWv9ek2-ekQAKInt1qdT7cHmYG0yrEBlHn0JSlwfhIdFQP-GlGXHOTiqChdGzSyuZnk5RUUAv1rEuFHod5FOJp76AVGR9n1hNBWPXU0PQzZBZsJcKImoZEDdqLz4X9eGW-RPMdFxS6dCe2ehkg5_vZa&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--rest)">멕시칸 칸티나</span>
@@ -340,6 +347,7 @@
           <span><b>위치</b> 3935 Freedom Circle, Santa Clara</span>
           <span><b>분위기</b> 활기찬 멕시칸, 마르가리타/풀바</span>
           <span class="cap">2층 프라이빗룸 최대 50명 · 본관 325석</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 2층 프라이빗룸 단독 사용으로 40명 완전한 독립 공간 · 325석 본관 덕분에 오버플로우 걱정 없음 · 단체 마르가리타 패키지 협의 가능</span>
           <span><b>예약</b> Google/OpenTable + 매장 전화</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Pedro%27s%20Restaurant%20Cantina%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -352,7 +360,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=10+Butchers+Korean+BBQ+Sunnyvale" target="_blank" rel="noopener">
           <span class="emoji">🍖</span>
-          <img data-photo-ref="AaVGc3mX7BA5GCtdCykuZCyEqdjMkMsWZeMpfa2L8Om5lRelVSvyFHSUt1eJn3gWnLMBo6ip0IsFJWbUOpSBAKQ5LfjYIN5FkjMr0LXVxmG7o4_Hs2QY_1ArpgHyIylAWg6JF9RzsmfY3PXt9-iSXzqffjAmAyaYhW0fshd56QYm00aAKscy_DJ0DfwVag_oH5Th5W4mcqW-cyypck2Rc9HW30_ETFVBJ9wPLIbi0hphRfX_-yTtbSGdp0DXtGWFjI4PxtsF7lxRbBsuk5en0n7tPJPDfWoMJykmMWtTN5gG-V3aWs1sBrabjIiYib5hGwnmctg6mdtAEQdGILSnp-D754BeGtNm187Nsqcd0h2K39BOO6VUlKUV4JviP74wjClgjUTxBKtYBvYWAgqfe-wPiXJ1NnlPx_OqYFlEychcJhoHJg" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3mX7BA5GCtdCykuZCyEqdjMkMsWZeMpfa2L8Om5lRelVSvyFHSUt1eJn3gWnLMBo6ip0IsFJWbUOpSBAKQ5LfjYIN5FkjMr0LXVxmG7o4_Hs2QY_1ArpgHyIylAWg6JF9RzsmfY3PXt9-iSXzqffjAmAyaYhW0fshd56QYm00aAKscy_DJ0DfwVag_oH5Th5W4mcqW-cyypck2Rc9HW30_ETFVBJ9wPLIbi0hphRfX_-yTtbSGdp0DXtGWFjI4PxtsF7lxRbBsuk5en0n7tPJPDfWoMJykmMWtTN5gG-V3aWs1sBrabjIiYib5hGwnmctg6mdtAEQdGILSnp-D754BeGtNm187Nsqcd0h2K39BOO6VUlKUV4JviP74wjClgjUTxBKtYBvYWAgqfe-wPiXJ1NnlPx_OqYFlEychcJhoHJg&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--rest)">한식 BBQ</span>
@@ -362,6 +370,7 @@
           <span><b>위치</b> 595 E El Camino Real, Sunnyvale (SCU 차로 약 10분)</span>
           <span><b>분위기</b> 한국식 숯불구이, 소주·맥주</span>
           <span class="cap">대형 홀 단체 가능 (40명은 전화 확인 권장)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 테이블별 숯불그릴이 자연스러운 회식 분위기 조성 · 넓은 홀로 대형 단체 수용 경험 풍부 · 소주·맥주 단체 주문 원활</span>
           <span><b>예약</b> Google 예약 + 매장 전화</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=10%20Butchers%20Korean%20BBQ%20Sunnyvale&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -373,7 +382,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Il+Fornaio+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍝</span>
-          <img data-photo-ref="AaVGc3l0JC79N0Ri2M_Ps9wwJF9LoRV3iyp9nK2pifSJcropfolDQ2vQAspYYp8Yhr4TW03xVpkYFFVTJ966Uc4XqAVLfwKkVvUeMhE7GFo909UMKPIL0zYsIvzxZLPlDIqNejDpfqNuyDx7w-vepv5bqX27q5Ff3kNKPGEQKKrjzdFkkdbfaDEbuszRuAKmHgFCyvIyuRWO9g2seLwsFOzm-XNfziPKQBwH5lxViRjIDbecp7FG5xSv6I7M1k8T6MAOk_7rwWp3TcNO6aCNRVNJ3r8vFnyIZQswbWwliTnvC5x46dve0osGaa3eb3QAzf7cx1TkMDFWcmd1T-2syAnzmvIQ4P8dzcD7bzL1c0M2HBJuJa3XKFDUMBxWX-yyrEaVIrkIkJUNdVRCdewIKm78eqLC5FS6Mlx3beOXN27DaYmFJw" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3l0JC79N0Ri2M_Ps9wwJF9LoRV3iyp9nK2pifSJcropfolDQ2vQAspYYp8Yhr4TW03xVpkYFFVTJ966Uc4XqAVLfwKkVvUeMhE7GFo909UMKPIL0zYsIvzxZLPlDIqNejDpfqNuyDx7w-vepv5bqX27q5Ff3kNKPGEQKKrjzdFkkdbfaDEbuszRuAKmHgFCyvIyuRWO9g2seLwsFOzm-XNfziPKQBwH5lxViRjIDbecp7FG5xSv6I7M1k8T6MAOk_7rwWp3TcNO6aCNRVNJ3r8vFnyIZQswbWwliTnvC5x46dve0osGaa3eb3QAzf7cx1TkMDFWcmd1T-2syAnzmvIQ4P8dzcD7bzL1c0M2HBJuJa3XKFDUMBxWX-yyrEaVIrkIkJUNdVRCdewIKm78eqLC5FS6Mlx3beOXN27DaYmFJw&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--rest)">이탈리안</span>
@@ -383,6 +392,7 @@
           <span><b>위치</b> 2752 Augustine Dr, Santa Clara</span>
           <span><b>분위기</b> 정통 이탈리안, 와인·칵테일</span>
           <span class="cap">프라이빗 다이닝룸 다수 (단체 메뉴 제공)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 파티오 단독 대관 최대 55명 착석 · 프라이빗룸 다수로 분산 or 통합 배치 자유 · 단체 전담 코디네이터 배정</span>
           <span><b>예약</b> Google/OpenTable + Private Dining 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Il%20Fornaio%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -392,6 +402,54 @@
         </div>
       </div>
 
+
+      <div class="card">
+        <a class="photo" href="https://www.google.com/search?tbm=isch&q=Fleming%27s+Prime+Steakhouse+Santa+Clara" target="_blank" rel="noopener">
+          <span class="emoji">🥩</span>
+          <img data-photo-ref="AaVGc3m-AcjSEX9ktUMIhUQ8UYMj1diPv6ygl6lt2cvRFGi6p0cF8gHfMNrOXBlehh5EtCVxSeE35vltVxWK8ivEI8AT9-dGL4s8o3fv9ED8R-z1EdKJRDuQ1mvVMmiyLHUhWXCB2cjO7C8vMD8iVYcy3zUWGflxUFqvSb_x294VVWTHDjPwsZQfZpPPKktSo_SPkjIYxBRJS9Hmd3Abc-GoBSsJqDoX_Zn0BCJdD-cvUNL_H5VR4-o7fsGxUKG9OBhTFNH1B0dz1od8yoWGnIaybrqSTwIW-DcBcBcP09CnvUaLqZrE8-vSOsmJNiphavdvIp9T99RKP1NldZ7ZPCOsx_stSAwCUhf0Sbhsm3BDyrrHhpev-0aKjbEewuU4DsEpVWgB9-Y8ZCTg5DnqjVHsWcf3r7-rtxDIgQlY1aA6fYjKdAABvN0zZva0e5L_g59J" alt="" onerror="this.remove()">
+          <span class="credit">📷 사진 더보기</span>
+        </a>
+        <span class="tag" style="background:var(--rest)">프리미엄 스테이크·와인</span>
+        <h3>Fleming's Prime Steakhouse &amp; Wine Bar</h3>
+        <div class="rating">⭐ 4.4 <small>· Google (Yelp 1,422 리뷰)</small></div>
+        <div class="rows">
+          <span><b>위치</b> 2762 Augustine Dr, Santa Clara (SCU 차로 약 7분)</span>
+          <span><b>분위기</b> 프리미엄 스테이크하우스 · 와인 900종 · 비즈니스 다이닝</span>
+          <span class="cap">프라이빗 다이닝룸 다수 · Private Dining Director 전담 배정</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 기업 이벤트 전문 스테이크하우스로 단체 서비스 노하우 최고 수준 · 프라이빗룸 다수 + 전담 디렉터가 행사 전 과정 책임 관리</span>
+          <span><b>예약</b> OpenTable + Private Dining 팀 직접 문의 · ☎ (408) 346-4557</span>
+        </div>
+        <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Fleming%27s%20Prime%20Steakhouse%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
+        <div class="links">
+          <a class="map" href="https://www.google.com/maps/search/?api=1&query=Fleming%27s+Prime+Steakhouse+Santa+Clara" target="_blank" rel="noopener">지도/예약</a>
+          <a class="book" href="https://www.opentable.com/r/flemings-steakhouse-santa-clara" target="_blank" rel="noopener">OpenTable</a>
+          <a class="site" href="https://www.flemingssteakhouse.com/locations/ca/santa-clara/private-dining" target="_blank" rel="noopener">단체예약 페이지</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <a class="photo" href="https://www.google.com/search?tbm=isch&q=Rise+Woodfire+Pizza+Rotisserie+Santa+Clara" target="_blank" rel="noopener">
+          <span class="emoji">🔥</span>
+          <img data-photo-ref="AaVGc3nnIdaktEM9Iezw9om9kCPVC5mqh5nKVKH4YuMyOGFbZs0HgYWRMzIuIS41QIYkZWB4OspBtxSmshTbmEQhv6PGnmtvebETlabMO5yHjlH_2L5Lxe5cFYn0MRuml63REm1sxHTSCgmNinLGHc7EAVI151AcnR-PYgMRZhU13VlDwKjxI7ojDVWFDsq1I8RVzYQZ_q6nUstVIr_uDAKvH7qUfapx19bYLkwDZ5Li-3NGvlHauXmj25VyNiU4ESdineHQVm__MKa4WIYwQWCgi8iDQmTOfEsprJph47-lLrUNgrVXzl8KoL3jJTiYYEdzjIq3dJN9r0NLybCLS3mERED1bD8f3KNEssGq5i5WZCYfi_eX2izTgW4tgo1s-QfiiV1WHHtEGgzKfRPF9Tgex7j_RcxemYAqrrfEVJKzCp79eV6i" alt="" onerror="this.remove()">
+          <span class="credit">📷 사진 더보기</span>
+        </a>
+        <span class="tag" style="background:var(--rest)">우드파이어 피자·로티서리</span>
+        <h3>Rise Woodfire Pizza &amp; Rotisserie</h3>
+        <div class="rating">⭐ 4.2 <small>· Google (300석 대형 레스토랑)</small></div>
+        <div class="rows">
+          <span><b>위치</b> 3905 Rivermark Plz, Santa Clara (SCU 차로 약 10분)</span>
+          <span><b>분위기</b> 우드파이어 피자 + 로티서리 · 가족 친화적 · 넓고 여유로운 공간</span>
+          <span class="cap">파티오 65명 / Globe룸 30명 / 메인홀 72명 조합 가능</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 300석 대형 레스토랑으로 공간 여유 · 파티오·룸·메인홀 조합으로 40명 맞춤 배치 가능 · 케이터링팀 별도 운영으로 단체 패키지 구성 용이</span>
+          <span><b>예약</b> OpenTable + Events 팀 문의 · ☎ (408) 752-5365</span>
+        </div>
+        <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Rise%20Woodfire%20Pizza%20Rotisserie%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
+        <div class="links">
+          <a class="map" href="https://www.google.com/maps/search/?api=1&query=Rise+Woodfire+Pizza+Rotisserie+Santa+Clara" target="_blank" rel="noopener">지도/예약</a>
+          <a class="book" href="https://www.opentable.com/r/rise-woodfire-pizza-and-rotisserie-santa-clara" target="_blank" rel="noopener">OpenTable</a>
+          <a class="site" href="https://risewoodfire.com/" target="_blank" rel="noopener">웹사이트</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -406,7 +464,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Maggiano%27s+Little+Italy+San+Jose" target="_blank" rel="noopener">
           <span class="emoji">🍝</span>
-          <img data-photo-ref="AaVGc3kjXh06DiTne2AnpfiQ_8L171LO5mg-mPbKipbCrQOpwMXsSlt1YXGHgBVR978piKpcpjY-gKIXlMKCHq-aBKeMLpF1173X-kLP7bEDWRuozrE3MHiArDBmztAFg1AEQ4adg1S_Bjl2eGVaFxPnCg8FkykFoBD9gIfsRkPctQZeQck16F5gn4uJRtHDJqnuAW_ZM6-0prLdsOeozULE-4UcAEYhiQeARyatDX5Zl6p4sykqXI1bV1xrOmr3ixDupwcegRne9T4gp7k5DX4d2xWUDx7TyqljHUuI9Xal_-uYBgeSx2ebrYs0Vvz2ODO7wdRueQB6qktrvU8TNI5ltqkEZlAKcFmQXxvfqCvC8DrspEJAYnzo5Mlqr-jPiaHLc0Qr4evTOH7HCCM9B-4tZCOmR6YAX4NoDZYH6Ja7IBXur_1eB9HOrXC_-MXgAobq" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kjXh06DiTne2AnpfiQ_8L171LO5mg-mPbKipbCrQOpwMXsSlt1YXGHgBVR978piKpcpjY-gKIXlMKCHq-aBKeMLpF1173X-kLP7bEDWRuozrE3MHiArDBmztAFg1AEQ4adg1S_Bjl2eGVaFxPnCg8FkykFoBD9gIfsRkPctQZeQck16F5gn4uJRtHDJqnuAW_ZM6-0prLdsOeozULE-4UcAEYhiQeARyatDX5Zl6p4sykqXI1bV1xrOmr3ixDupwcegRne9T4gp7k5DX4d2xWUDx7TyqljHUuI9Xal_-uYBgeSx2ebrYs0Vvz2ODO7wdRueQB6qktrvU8TNI5ltqkEZlAKcFmQXxvfqCvC8DrspEJAYnzo5Mlqr-jPiaHLc0Qr4evTOH7HCCM9B-4tZCOmR6YAX4NoDZYH6Ja7IBXur_1eB9HOrXC_-MXgAobq&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--party)">이탈리안 볼룸</span>
@@ -416,6 +474,7 @@
           <span><b>위치</b> 3055 Olin Ave, Santana Row, San Jose</span>
           <span><b>분위기</b> 패밀리스타일 연회, 자체 바 보유</span>
           <span class="cap">뱅킷룸 30~70명 / 그랜드볼룸 최대 180명</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 40명에 딱 맞는 뱅킷룸 규모 · 인당 고정가 패밀리스타일 세트 메뉴로 정산 간편 · 뱅킷 전담팀이 이벤트 전 과정 코디</span>
           <span><b>예약</b> OpenTable + Banquet Sales 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Maggiano%27s%20Little%20Italy%20Santana%20Row%20San%20Jose&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -429,7 +488,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Terra+Eataly+Silicon+Valley+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍷</span>
-          <img data-photo-ref="AaVGc3lvJX91ywTkJSdMY4u02pnbvM6Fn9IQkPHgGzzhKMLYAsuCtexo5RnKNAESNmiHS4ls4mAe74yaWV97SzK43BQhbXu00tk1Jx7mnmA5hKM99A9DG9BuZqHArvOttGwfK7qAWc14_UFndioJBaFvjjxFZm3r7ZI7aVoAGJaYn8YFctn5CCCitIK6KC8vBFsfsWgBX_d7s0rTDvkRIS3b4CpZc2EtYmiPTsNsHc8IVwPiX8bTpM4oF0wSw8y5xm3KuTIIouPkuSIiMyNSleCvCKATjX3BXTZg3aTw9CBnTtHq2KVpJKrjSZH1nWkMf02nQoHTQAtyYGN_-_wvYSZbKOFC4LHfzLHWokVbV1ks2OHPyZO1A5UpdOTyghOhWtoaOOcKNhBO9bN5p2h_rweBCSbEAaOd5KUIZNCspV-XqGPv3RIA9ZOVAr_xd299x8mD" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3lvJX91ywTkJSdMY4u02pnbvM6Fn9IQkPHgGzzhKMLYAsuCtexo5RnKNAESNmiHS4ls4mAe74yaWV97SzK43BQhbXu00tk1Jx7mnmA5hKM99A9DG9BuZqHArvOttGwfK7qAWc14_UFndioJBaFvjjxFZm3r7ZI7aVoAGJaYn8YFctn5CCCitIK6KC8vBFsfsWgBX_d7s0rTDvkRIS3b4CpZc2EtYmiPTsNsHc8IVwPiX8bTpM4oF0wSw8y5xm3KuTIIouPkuSIiMyNSleCvCKATjX3BXTZg3aTw9CBnTtHq2KVpJKrjSZH1nWkMf02nQoHTQAtyYGN_-_wvYSZbKOFC4LHfzLHWokVbV1ks2OHPyZO1A5UpdOTyghOhWtoaOOcKNhBO9bN5p2h_rweBCSbEAaOd5KUIZNCspV-XqGPv3RIA9ZOVAr_xd299x8mD&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--party)">루프탑 이탈리안</span>
@@ -439,6 +498,7 @@
           <span><b>위치</b> Westfield Valley Fair, Santa Clara</span>
           <span><b>분위기</b> 화려한 루프탑 프라이빗 이벤트, 와인바</span>
           <span class="cap">프라이빗 이벤트/대형 단체 (행사팀 견적)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 루프탑 전용 공간 단독 대관으로 독점 분위기 · 이탈리아 식품관 연계 케이터링으로 차별화된 메뉴 구성 · 기업 이벤트 특화팀 운영</span>
           <span><b>예약</b> Eataly Events 팀 직접 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Eataly%20Silicon%20Valley%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -451,7 +511,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Scott%27s+Seafood+San+Jose" target="_blank" rel="noopener">
           <span class="emoji">🦞</span>
-          <img data-photo-ref="AaVGc3krueXKRfjiJGYOMLhwvhy5CKzRI-4QimULKRQwDc2MnLfwJ2rjtdwvqMsE_66Q6SqlolXN5qe7sJnCBW1uFr3chF5C1QOVKtOYe-Y78yU3cJSk4Ocby9X12ybPJkVgaB1TLoNsqG7rF81OHG3_qcAqkoDtAg2ER35yJ_yovmxEPURoLAGm0Ye242UjBtxI2UmCITU438SROucJq45AgY3oxq9BYnHu5IITLoF2rH6hR2A4aDKSdHv1-x6Cxd_9_HqadyKXeJ3ArxQq_5mdIwUlZTH-Omz79J9GGhK0jCexv_9pU3w1VYbRFpjpP3U7qSWk6anN3G40Gcu3p1F1PWms_xkgD58aByPNgsQNwaVWjmihsv6WZLmsXFjOwVZUZltH155Sb6rJBB_XO_C6ryq_Uy9ujYbPxBGTxRwl56JRUpKl" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3krueXKRfjiJGYOMLhwvhy5CKzRI-4QimULKRQwDc2MnLfwJ2rjtdwvqMsE_66Q6SqlolXN5qe7sJnCBW1uFr3chF5C1QOVKtOYe-Y78yU3cJSk4Ocby9X12ybPJkVgaB1TLoNsqG7rF81OHG3_qcAqkoDtAg2ER35yJ_yovmxEPURoLAGm0Ye242UjBtxI2UmCITU438SROucJq45AgY3oxq9BYnHu5IITLoF2rH6hR2A4aDKSdHv1-x6Cxd_9_HqadyKXeJ3ArxQq_5mdIwUlZTH-Omz79J9GGhK0jCexv_9pU3w1VYbRFpjpP3U7qSWk6anN3G40Gcu3p1F1PWms_xkgD58aByPNgsQNwaVWjmihsv6WZLmsXFjOwVZUZltH155Sb6rJBB_XO_C6ryq_Uy9ujYbPxBGTxRwl56JRUpKl&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--party)">씨푸드 볼룸</span>
@@ -461,6 +521,7 @@
           <span><b>위치</b> 200 S First St, Downtown San Jose</span>
           <span><b>분위기</b> 폴리시드 씨푸드 다이닝, 전용 볼룸·풀바</span>
           <span class="cap">프라이빗 볼룸/대형 단체 (웨딩·기업행사)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 기업·웨딩 전문 프라이빗 볼룸으로 완전한 독립 공간 · 씨푸드 단체 코스 메뉴 사전 조율 가능 · 다운타운 위치로 교통 접근성 우수</span>
           <span><b>예약</b> OpenTable + Private Event 팀 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Scott%27s%20Seafood%20200%20S%20First%20St%20San%20Jose&t=&z=15&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -485,7 +546,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Laughing+Monk+Brewing+Sunnyvale" target="_blank" rel="noopener">
           <span class="emoji">🍺</span>
-          <img data-photo-ref="AaVGc3niv2-n9dXkZXiUeC4wKpN-vq-YcST2oQRvbhi0P9rWIM75ho3HvjZUN8strzF9qttZWSP_KrUKMRyK6Lt19Yb8eokfz0xIKB1ULj7hp96fIckvaBovR94GWoFB1Z8A9atQxRvcf6frp-bKeUG4IqeefYCM1LrLJU__NsacdYenx9SoVgmTgLu7fgtfQspBbuhkjYqRk-htdpbQTRSOJ0jZ-pq48s0O0kYSh4JekMLn61dJSuO3KA6FNVWH7odYxdXLj9ZFFlocEPdzZ9p8bT7nTXGyB5di_JhUDFUrQbyeYRzBzo5g52KFrVBCQmyfRQjfcyUDR7Kzs9z_j_qEBzz5eEex_-tg-qAMIYm3N17EQ3zVzAWePF1vJ6_a5SP55djcJiLTevthgvUEufs_1cD4z-UzVUAS91IUmVMZj0r2G7gz66ipvyFL0lP6OJKz" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3niv2-n9dXkZXiUeC4wKpN-vq-YcST2oQRvbhi0P9rWIM75ho3HvjZUN8strzF9qttZWSP_KrUKMRyK6Lt19Yb8eokfz0xIKB1ULj7hp96fIckvaBovR94GWoFB1Z8A9atQxRvcf6frp-bKeUG4IqeefYCM1LrLJU__NsacdYenx9SoVgmTgLu7fgtfQspBbuhkjYqRk-htdpbQTRSOJ0jZ-pq48s0O0kYSh4JekMLn61dJSuO3KA6FNVWH7odYxdXLj9ZFFlocEPdzZ9p8bT7nTXGyB5di_JhUDFUrQbyeYRzBzo5g52KFrVBCQmyfRQjfcyUDR7Kzs9z_j_qEBzz5eEex_-tg-qAMIYm3N17EQ3zVzAWePF1vJ6_a5SP55djcJiLTevthgvUEufs_1cD4z-UzVUAS91IUmVMZj0r2G7gz66ipvyFL0lP6OJKz&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--pub)">브루어리 가스트로펍</span>
@@ -495,6 +556,7 @@
           <span><b>위치</b> Sunnyvale (SCU에서 차로 약 10~15분)</span>
           <span><b>분위기</b> 수상 경력 수제맥주, 넓은 이벤트 공간(1,700 sqft)</span>
           <span class="cap">단체 8~125명 · 뱅킷 메뉴 25~125명</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 40명을 여유롭게 수용하는 1,700 sqft 전용 이벤트홀 · 뱅킷 패키지 포함으로 주문 간소화 · 수제맥주 브루어리 투어 연계 가능</span>
           <span><b>예약</b> 웹사이트 단체예약 폼 / 전화</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Laughing%20Monk%20Brewing%20Sunnyvale&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -507,7 +569,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=Clara%27s+Junction+Santa+Clara" target="_blank" rel="noopener">
           <span class="emoji">🍗</span>
-          <img data-photo-ref="AaVGc3kdg8_6kRmCHgh2CWPCT6G5lLq0MCT081yPJ6his5uYHxgE1y6RTEg9hHY2HbUq96SDz2tI0XlZxelK4X13MAonwzKtgfsxjeXUDPBuFFQiWcsamXIBJw4SpCG14Yuw4WIJ-tDyLV3FtR_s03Un3ERkv4tUNlg21s9Pg4LmOJxkqMOsxNwGRkeKNGpQPiDycLlI5OTBbdBmyxKdk8XQ6nGiaR2jIf1OwjSFgPnYDrwnIf8o4ZB9RmkaPz0_ALym1HYk0UyFavnI06JHmiOyULMJrx4zrnfPIv8jqPx4tk6qfXtkBCX6QmVAEFWy06l8bUY-khqqkAhPt-KZC16NHQu7BXCsDNkhME5vhxvB7gxbeFSKLu4fmyVgNbqcK-CRK9G_X9xEy2sbQxzXWKrDotaMvJck63PjDprjbzVwJykvLVOi-W1zgcCMQG6iJQ" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kdg8_6kRmCHgh2CWPCT6G5lLq0MCT081yPJ6his5uYHxgE1y6RTEg9hHY2HbUq96SDz2tI0XlZxelK4X13MAonwzKtgfsxjeXUDPBuFFQiWcsamXIBJw4SpCG14Yuw4WIJ-tDyLV3FtR_s03Un3ERkv4tUNlg21s9Pg4LmOJxkqMOsxNwGRkeKNGpQPiDycLlI5OTBbdBmyxKdk8XQ6nGiaR2jIf1OwjSFgPnYDrwnIf8o4ZB9RmkaPz0_ALym1HYk0UyFavnI06JHmiOyULMJrx4zrnfPIv8jqPx4tk6qfXtkBCX6QmVAEFWy06l8bUY-khqqkAhPt-KZC16NHQu7BXCsDNkhME5vhxvB7gxbeFSKLu4fmyVgNbqcK-CRK9G_X9xEy2sbQxzXWKrDotaMvJck63PjDprjbzVwJykvLVOi-W1zgcCMQG6iJQ&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--pub)">아메리칸 스포츠바</span>
@@ -517,6 +579,7 @@
           <span><b>위치</b> Santa Clara (Levi's Stadium 인근)</span>
           <span><b>분위기</b> 실내외 공간, 수제칵테일·생맥주, 컴포트푸드</span>
           <span class="cap">12명까지 온라인 / 그 이상은 GM 문의, 전체 대관 가능</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 전체 대관으로 40명 독점 공간 확보 · GM 직접 협의로 맞춤형 단체 패키지 구성 · 실내외 복합 공간으로 자유로운 이동 동선</span>
           <span><b>예약</b> 12명↑ GM 전화 (408) 335-7788</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=Clara%27s%20Junction%20Santa%20Clara&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -529,7 +592,7 @@
       <div class="card">
         <a class="photo" href="https://www.google.com/search?tbm=isch&q=O%27Flaherty%27s+Irish+Pub+San+Jose" target="_blank" rel="noopener">
           <span class="emoji">🍺</span>
-          <img data-photo-ref="AaVGc3nfmVWzaSk68QkiSwb_7U8128ZvJaj0RXTX7WrsATMCcG9XpJpRox5ptnDXWerSvaotKG_O4BTSStUe2ALlL7bT1njRWzNKvQlu6pjazV27QUPWcSkof7A1HMR3TZpu4tB2nn7p0TWTB3JbIW0HW4fo05Duc-tkvBollFHvweL28kpb73W7k1pRdo72RykICBa2KR2RHW0I5GQwtEVPZO8MvUreVPfj8_lhQgjBOcgmE55xNsXd8yE7-cMO6AJXZNI3qo0JPAY6QyBi2kINPOzBPOGIuwA-OtVaVzH9-s3b3hyyW8AxfpClFNXgOaW-jX8ts4eQTZdE2AUuwiGszTVk_fzaUJTqTHcaMSuR8cHTlvzauF2tVF1pfvtaxfbq14a79opaMJ9Ozzd-upPyTuqVKxpcCfBVHK3-njeT5trjRQ" alt="" loading="lazy" onerror="this.remove()">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nfmVWzaSk68QkiSwb_7U8128ZvJaj0RXTX7WrsATMCcG9XpJpRox5ptnDXWerSvaotKG_O4BTSStUe2ALlL7bT1njRWzNKvQlu6pjazV27QUPWcSkof7A1HMR3TZpu4tB2nn7p0TWTB3JbIW0HW4fo05Duc-tkvBollFHvweL28kpb73W7k1pRdo72RykICBa2KR2RHW0I5GQwtEVPZO8MvUreVPfj8_lhQgjBOcgmE55xNsXd8yE7-cMO6AJXZNI3qo0JPAY6QyBi2kINPOzBPOGIuwA-OtVaVzH9-s3b3hyyW8AxfpClFNXgOaW-jX8ts4eQTZdE2AUuwiGszTVk_fzaUJTqTHcaMSuR8cHTlvzauF2tVF1pfvtaxfbq14a79opaMJ9Ozzd-upPyTuqVKxpcCfBVHK3-njeT5trjRQ&key=AIzaSyDYw2LcppFj8Wbpaqgg6H2BTGW8Dc_RbrE" alt="" loading="lazy" onerror="this.remove()">
           <span class="credit">📷 사진 더보기</span>
         </a>
         <span class="tag" style="background:var(--pub)">아이리시 펍</span>
@@ -539,6 +602,7 @@
           <span><b>위치</b> 25 N San Pedro St, Downtown San Jose</span>
           <span><b>분위기</b> 전통 아이리시 펍, 생맥주·위스키, 단체 단골</span>
           <span class="cap">대형 그룹/반대관 가능 (전화 확인)</span>
+          <span class="why"><b>👥 40명 추천 이유</b> 아이리시 펍 문화 특성상 단체 파티 응대 경험 풍부 · 반대관으로 40명 전용 구역 확보 가능 · 다운타운 위치로 숙박·교통 편리</span>
           <span><b>예약</b> 매장 전화 / 이벤트 문의</span>
         </div>
         <iframe class="embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?width=100%25&height=170&hl=en&q=O%27Flaherty%27s%20Irish%20Pub%20San%20Jose&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe>
@@ -557,16 +621,6 @@
 </div>
 
 <script>
-  // API 키를 config.js에서 불러와 사진 src 동적 세팅
-  document.addEventListener('DOMContentLoaded', function() {
-    if (typeof GOOGLE_API_KEY !== 'undefined' && GOOGLE_API_KEY) {
-      document.querySelectorAll('img[data-photo-ref]').forEach(function(img) {
-        img.src = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference='
-                  + img.dataset.photoRef + '&key=' + GOOGLE_API_KEY;
-      });
-    }
-  });
-
   var venues = [
     {n:"The Hut Restaurant & Bar", t:"도보권", c:"#d6336c", lat:37.35280, lng:-121.94360, q:"The Hut 3200 The Alameda Santa Clara"},
     {n:"Mio Vicino", t:"도보권", c:"#d6336c", lat:37.35400, lng:-121.94790, q:"Mio Vicino 1290 Benton St Santa Clara"},
@@ -582,6 +636,8 @@
     {n:"Laughing Monk Brewing & Gastropub", t:"펍", c:"#7a8b3c", lat:37.37820, lng:-122.02060, q:"Laughing Monk Brewing Sunnyvale"},
     {n:"Clara's Junction", t:"펍", c:"#7a8b3c", lat:37.40180, lng:-121.96850, q:"Clara's Junction Santa Clara"},
     {n:"O'Flaherty's Irish Pub", t:"펍", c:"#7a8b3c", lat:37.33640, lng:-121.89490, q:"O'Flaherty's Irish Pub San Jose"},
+    {n:"Fleming's Prime Steakhouse", t:"식당", c:"#4f9da6", lat:37.39050, lng:-121.97620, q:"Fleming's Prime Steakhouse Santa Clara"},
+    {n:"Rise Woodfire Pizza & Rotisserie", t:"식당", c:"#4f9da6", lat:37.39590, lng:-121.97020, q:"Rise Woodfire Pizza Rotisserie Santa Clara"},
     {n:"Pizza My Heart", t:"13기추천", c:"#7c3aed", lat:37.35060, lng:-121.94390, q:"Pizza My Heart 700 Bellomy St Santa Clara"},
     {n:"Home Eat 汉家宴", t:"13기추천", c:"#7c3aed", lat:37.35020, lng:-121.93560, q:"Home Eat 638 El Camino Real Santa Clara"},
     {n:"Taplands Taproom", t:"도보권", c:"#d6336c", lat:37.34830, lng:-121.94680, q:"Taplands 1171 Homestead Rd Santa Clara"},
